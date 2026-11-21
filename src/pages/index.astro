@@ -1,50 +1,69 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 ---
 
-<!doctype html>
 <html lang="en">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-	</head>
-	<body>
-		<Header />
-		<main>
-			<h1>🧑‍🚀 Hello, Astronaut!</h1>
-			<p>
-				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This
-				template serves as a lightweight, minimally-styled starting point for anyone looking to build
-				a personal website, blog, or portfolio with Astro.
-			</p>
-			<p>
-				This template comes with a few integrations already configured in your
-				<code>astro.config.mjs</code> file. You can customize your setup with
-				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
-				React, or Vue to your project.
-			</p>
-			<p>Here are a few ideas on how to get started with the template:</p>
-			<ul>
-				<li>Edit this page in <code>src/pages/index.astro</code></li>
-				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-				<li>Check out the included blog posts in <code>src/content/blog/</code></li>
-				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
-			</ul>
-			<p>
-				Have fun! If you get stuck, remember to <a href="https://docs.astro.build/"
-					>read the docs
-				</a> or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
-			</p>
-			<p>
-				Looking for a blog template with a bit more personality? Check out <a
-					href="https://github.com/Charca/astro-blog-template"
-					>astro-blog-template
-				</a> by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
-			</p>
-		</main>
-		<Footer />
-	</body>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width" />
+<title>Threedex News - Breaking News, Ibadan, Nigeria & World</title>
+<style>
+body{font-family:Arial,sans-serif;margin:0;background:#f4f4f4;color:#111}
+header{background:#c80000;color:white;padding:15px;text-align:center}
+header h1{margin:0;font-size:32px;letter-spacing:1px}
+header p{margin:5px 0 0}
+nav{background:#111;color:white;display:flex;justify-content:center;gap:15px;padding:10px;flex-wrap:wrap}
+nav a{color:white;text-decoration:none;font-weight:bold;font-size:14px}
+.hero{background:#111;color:white;padding:30px 20px;text-align:center}
+.hero h2{font-size:28px;margin:0}
+.hero p{color:#ddd}
+.container{max-width:900px;margin:auto;padding:15px}
+.card{background:white;padding:15px;margin-bottom:15px;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.1)}
+.card span{background:#c80000;color:white;padding:3px 8px;border-radius:5px;font-size:12px}
+.card h3{margin:10px 0 5px}
+.card p{color:#444}
+.card a{color:#c80000;font-weight:bold;text-decoration:none}
+footer{background:#111;color:white;text-align:center;padding:15px;margin-top:20px}
+</style>
+</head>
+<body>
+<header>
+<h1>THREEDEX NEWS</h1>
+<p>Breaking News • Ibadan • Nigeria • World</p>
+</header>
+<nav>
+<a href="/">Home</a>
+<a href="/">Nigeria</a>
+<a href="/">Sports</a>
+<a href="/">Entertainment</a>
+<a href="/">Politics</a>
+</nav>
+<div class="hero">
+<h2>Welcome to Threedex News</h2>
+<p>Your trusted source for fast, true and fresh news.</p>
+</div>
+<div class="container">
+<div class="card">
+<span>BREAKING</span>
+<h3>Welcome to Threedex News - We Are Live!</h3>
+<p>Threedex News is now live. We go bring you breaking news, sports, entertainment and politics from Ibadan, Nigeria and the whole world.</p>
+<a href="/">Read More →</a>
+</div>
+<div class="card">
+<span>NIGERIA</span>
+<h3>Ibadan News: What Is Happening Around You</h3>
+<p>Stay updated with the latest happenings in Ibadan, Oyo State and across Nigeria. Real news, no fake news.</p>
+<a href="/">Read More →</a>
+</div>
+<div class="card">
+<span>SPORTS</span>
+<h3>Sports Update: Football, Basketball & More</h3>
+<p>Latest scores, transfers and sports gist from Nigeria and around the world.</p>
+<a href="/">Read More →</a>
+</div>
+</div>
+<footer>
+<p>© 2026 Threedex News | By Sunday Gedion | Ibadan, Nigeria</p>
+<p>Follow us for daily updates</p>
+</footer>
+</body>
 </html>
