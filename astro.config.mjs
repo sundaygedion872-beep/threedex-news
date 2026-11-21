@@ -7,7 +7,7 @@ import cloudflare from "@astrojs/cloudflare";
 
 // https://astro.build/config
 export default defineConfig({
-	site: https://threedex-news.sundaygedion872.workers.dev",
+	site: "https://threedex-news.sundaygedion872.workers.dev",
 	integrations: [mdx(), sitemap()],
 	adapter: cloudflare({
 		platformProxy: {
